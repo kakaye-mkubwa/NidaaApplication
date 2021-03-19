@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">NidaaApplication</string>
+    <string name="title_activity_main_screen">MainScreenActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="medical_history">Medical History</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+
+    <string-array name="airlines">
+        <item>E9</item>
+        <item>E1</item>
+        <item>E2</item>
+        <item>E3</item>
+        <item>E4</item>
+        <item>E5</item>
+        <item>E6</item>
+        <item>E7</item>
+        <item>E8</item>
+    </string-array>
+</resources>

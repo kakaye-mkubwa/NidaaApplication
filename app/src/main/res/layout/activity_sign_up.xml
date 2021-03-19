@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="342dp"
+        android:layout_height="111dp"
+        app:cardCornerRadius="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/logoAreaCardView">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/nidaa_top_logo"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Welcome"
+        android:textColor="@color/colorThemeRed"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:typeface="sans"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Please enter your personal information"
+        android:textColor="@color/colorThemeRed"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:typeface="sans"
+        android:layout_gravity="center_horizontal"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/personalInformationCardView"
+        android:layout_width="259dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="8dp"
+        android:backgroundTint="@color/colorThemeRed">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+            
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullNameEditText"
+                android:textSize="17sp"
+                android:typeface="sans"
+                android:textColorHint="@color/colorThemeRedText"
+                android:hint="Full Name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phoneNumberEditText"
+                android:textSize="17sp"
+                android:typeface="sans"
+                android:textColorHint="@color/colorThemeRedText"
+                android:hint="Email"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailEditText"
+                android:textSize="17sp"
+                android:typeface="sans"
+                android:textColorHint="@color/colorThemeRedText"
+                android:hint="Phone Number"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passwordEditText"
+                android:textSize="17sp"
+                android:typeface="sans"
+                android:textColorHint="@color/colorThemeRedText"
+                android:hint="Password"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bloodTypeEditText"
+                android:textSize="17sp"
+                android:typeface="sans"
+                android:textColorHint="@color/colorThemeRedText"
+                android:hint="Blood Type"/>
+            
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <CheckBox
+        android:id="@+id/termsAndConditionsCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="I accept the terms and conditions"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Sign Up"
+        android:background="@drawable/my_button_background"
+        android:textSize="17sp"
+        android:typeface="sans"
+        android:textStyle="normal"
+        android:textColor="#eee"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

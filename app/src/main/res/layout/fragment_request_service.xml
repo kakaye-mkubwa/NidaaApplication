@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Service"
+        android:textSize="25sp"
+        android:typeface="sans"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="90dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Problem Description"
+        android:typeface="sans"
+        android:textSize="17sp"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:boxStrokeColor="@color/colorThemeRed"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        app:boxStrokeWidth="2dp">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+            android:padding="8dp"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines ="6"
+            android:maxLength="2000"
+            android:gravity="top|left"
+            android:scrollHorizontally="false"
+            android:hint="Enter your request"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edit_text_border"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/my_button_background"
+        android:textColor="@color/colorThemeRedText"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
